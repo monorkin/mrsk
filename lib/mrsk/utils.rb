@@ -41,6 +41,6 @@ module Mrsk::Utils
 
   # Escape a value to make it safe for shell use.
   def escape_shell_value(value)
-    value.to_s.dump.gsub(/`/, '\\\\`').gsub(/$/, '\$')
+    value.to_s.dump.gsub(/`/, '\\\\`').gsub('$', '\$')
   end
 end
